@@ -1,7 +1,7 @@
 # Proshop
 
 ## Deployed site
-[https://https://proshop-las.herokuapp.com/](https://https://proshop-las.herokuapp.com/)
+[https://proshop-las.herokuapp.com/](https://proshop-las.herokuapp.com/)
 
 ## Public Homepage
 
