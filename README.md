@@ -5,23 +5,26 @@
 
 ## Public Homepage
 
-![](client/src/assets/Capture.PNG)
+![](Capture.PNG)
 
-## Description:
-PlayDatery will provide parents the ability to find and connect their kids with other kids with similar interests. Parents can either host a playdate or send their kids to another parent’s home.
-
-## Search
-Once logged in you can search by name or activity to find kids
-
-![](client/src/assets/Homepg.PNG)
-
-## Profile
-Edit and Update your profile with your address, photo, and kid's interests.
-
-![](client/src/assets/profile.PNG)
+## Features:
+Full featured shopping cart
+Product reviews and ratings
+Top products carousel
+Product pagination
+Product search feature
+User profile with orders
+Admin product management
+Admin user management
+Admin Order details page
+Mark orders as delivered option
+Checkout process (shipping, payment method, etc)
+PayPal / credit card integration
+Database seeder (products & users)
 
 ## Technologies:
-HTML, CSS, React, Material UI, NodeJS, Express, MongoDB, AWS, and Firebase.
+HTML, CSS, React, React Bootstrap, NodeJS, Express, MongoDB, Redux, PayPal API
 
-## License:
-Created by Laureni Wilkinson-Sanchez & Sandesh Menjoge
+## License/Disclaimer:
+I followed Brad Traversy's course MERN eCommerce From Scratch on Udemy.
+Copyright (c) 2020 Traversy Media
