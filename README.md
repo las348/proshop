@@ -9,24 +9,20 @@
 
 ## Features:
 <ul>
-<li>First item</li>
-<li>Second item</li>
-<li>Third item</li>
-<li>Fourth item</li>
+<li>Full featured shopping cart</li>
+<li>Product reviews and ratings</li>
+<li>Top products carousel</li>
+<li>Product pagination</li>
+<li>Product search feature</li>
+<li>User profile with orders</li>
+<li>Admin product management</li>
+<li>Admin user management</li>
+<li>Admin Order details page</li>
+<li>Mark orders as delivered option</li>
+<li>Checkout process (shipping, payment method, etc)</li>
+<li>PayPal / credit card integration</li>
+<li>Database seeder (products & users)</li>
 </ul>
-⋅⋅*Full featured shopping cart
-⋅⋅*Product reviews and ratings
-⋅⋅*Top products carousel
-⋅⋅*Product pagination
-⋅⋅*Product search feature
-⋅⋅*User profile with orders
-⋅⋅*Admin product management
-⋅⋅*Admin user management
-⋅⋅*Admin Order details page
-⋅⋅*Mark orders as delivered option
-⋅⋅*Checkout process (shipping, payment method, etc)
-⋅⋅*PayPal / credit card integration
-⋅⋅*Database seeder (products & users)
 
 ## Technologies:
 HTML, CSS, React, React Bootstrap, NodeJS, Express, MongoDB, Redux, PayPal API
