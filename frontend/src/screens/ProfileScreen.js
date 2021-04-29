@@ -6,6 +6,7 @@ import Message from '../components/Message'
 import Loader from '../components/Loader'
 import { getUserDetails, updateUserProfile } from '../actions/userActions'
 import { listMyOrders } from '../actions/orderActions'
+import { USER_UPDATE_PROFILE_RESET } from '../constants/userConstants'
 
 const ProfileScreen = ({ location, history }) => {
     const [name, setName] = useState('')
@@ -32,7 +33,8 @@ const ProfileScreen = ({ location, history }) => {
         if (!userInfo) {
             history.push('/login')
         } else {
-            if (!user.name) {
+            if (!user || !user.name || success) {
+                dispatch({ type: USER_UPDATE_PROFILE_RESET})
                 dispatch(getUserDetails('profile'))
                 dispatch(listMyOrders())
             } else {
@@ -40,7 +42,7 @@ const ProfileScreen = ({ location, history }) => {
                 setEmail(user.email)
             }
         }
-    }, [history, userInfo, dispatch, user])
+    }, [history, userInfo, dispatch, user, success])
 
     const submitHandler = (e) => {
         e.preventDefault()
@@ -131,7 +133,7 @@ const ProfileScreen = ({ location, history }) => {
                                     <td>{order.isPaid ? order.paidAt.substring(0, 10) : (
                                         <i className='fas fa-times' style={{ color: 'red' }}></i>
                                     )}</td>
-                                     <td>{order.isDelivered ? order.deliveredAt.substring(0, 10) : (
+                                    <td>{order.isDelivered ? order.deliveredAt.substring(0, 10) : (
                                         <i className='fas fa-times' style={{ color: 'red' }}></i>
                                     )}</td>
                                     <td>
